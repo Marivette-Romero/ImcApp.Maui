@@ -11,21 +11,33 @@
             <Border Stroke="LightGray"
                     StrokeThickness="2">
 
-                <VerticalStackLayout Padding="16" Spacing="4">
+                <!--Actualización estetica con Grid 29/09/2026-->
+                <Grid
+                    RowDefinitions="*,*"
+                    ColumnDefinitions="auto,*"
+                    RowSpacing="8"
+                    Padding="16"
+                    ColumnSpacing="4">
 
                     <Label
+                        Grid.Row="0"
+                        Grid.Column="0"
                         Text="Proporcione el peso en kilogramos:"
+                        VerticalOptions="Center"
                     />
 
-                    <Entry BackgroundColor="WhiteSmoke" x:Name="PesoLabel"/>
+                    <Entry Grid.Row="0" Grid.Column="1" BackgroundColor="WhiteSmoke" x:Name="PesoLabel"/>
 
                     <Label
+                        Grid.Row="1"
+                        Grid.Column="0"
                         Text="Proporcione la estatura en metros:"
+                        VerticalOptions="Center"
                     />
 
-                    <Entry BackgroundColor="WhiteSmoke" x:Name="EstaturaLabel"/>
+                    <Entry Grid.Row="1" Grid.Column="1" BackgroundColor="WhiteSmoke" x:Name="EstaturaLabel"/>
 
-                </VerticalStackLayout>
+                </Grid>
 
             </Border>
 
