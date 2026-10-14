@@ -6,10 +6,13 @@ namespace ImcApp.Maui.Models
 {
     public static class CaluladoraDeIndiceDeMasaCorporal
     {
+        //metodo 1:
         public static decimal IndiceDeMasaCorporal( Decimal peso, Decimal estatura)
         { 
             return peso/(estatura*estatura);
         }
+
+        //metodo 2:
         public static string SituacionNutricional (decimal imc)
         {
             if (imc < 18.5m)
